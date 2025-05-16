@@ -41,30 +41,14 @@ export default function ProjectsPage() {
           />
 
           <ProjectCard
-            title="DevTracker"
-            description="Track your development progress and set coding goals with this productivity tool for developers."
+            title="TrackSafe"
+            description="TrackSafe is a community-powered accident reporting and safety alert system designed to enhance road safety."
             image="/placeholder.svg?height=200&width=400"
             slug="devtracker"
-            tags={["React", "Firebase", "Charts"]}
+            tags={["React", "Nodejs", "Express"]}
           />
 
-          <ProjectCard
-            title="CodeSnap"
-            description="Beautiful code snippet generator with syntax highlighting for sharing on social media."
-            image="/placeholder.svg?height=200&width=400"
-            slug="codesnap"
-            tags={["TypeScript", "Canvas API", "Syntax Highlighting"]}
-          />
-
-          <ProjectCard
-            title="WebPerf"
-            description="Website performance monitoring and optimization tool to help improve your site's speed."
-            image="/placeholder.svg?height=200&width=400"
-            slug="webperf"
-            tags={["Performance", "Lighthouse", "Analytics"]}
-          />
-        </div>
-
+          
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
           <div className="mb-4 flex justify-center space-x-6">
