@@ -19,7 +19,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab."
-            image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
+            image="/placeholder.svg?height=200&width=400"
             slug="notiger"
             tags={["Chrome Extension", "JavaScript", "Motivation"]}
           />
@@ -27,7 +27,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="HackXplore"
             description="A unified platform to discover and discuss global hackathons and internships, helping students find opportunities."
-            image="/Screenshot 2025-05-16 213324.png?height=200&width=400"
+            image="/placeholder.svg?height=200&width=400"
             slug="paypeer"
             tags={["React", "Node.js", "MongoDB"]}
           />
@@ -41,14 +41,30 @@ export default function ProjectsPage() {
           />
 
           <ProjectCard
-            title="TrackSafe"
-            description="TrackSafe is a community-powered accident reporting and safety alert system designed to enhance road safety."
-            image="/Screenshot 2025-05-16 213244.png?height=200&width=400"
+            title="DevTracker"
+            description="Track your development progress and set coding goals with this productivity tool for developers."
+            image="/placeholder.svg?height=200&width=400"
             slug="devtracker"
-            tags={["React", "Nodejs", "Express"]}
+            tags={["React", "Firebase", "Charts"]}
           />
 
-          
+          <ProjectCard
+            title="CodeSnap"
+            description="Beautiful code snippet generator with syntax highlighting for sharing on social media."
+            image="/placeholder.svg?height=200&width=400"
+            slug="codesnap"
+            tags={["TypeScript", "Canvas API", "Syntax Highlighting"]}
+          />
+
+          <ProjectCard
+            title="WebPerf"
+            description="Website performance monitoring and optimization tool to help improve your site's speed."
+            image="/placeholder.svg?height=200&width=400"
+            slug="webperf"
+            tags={["Performance", "Lighthouse", "Analytics"]}
+          />
+        </div>
+
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
           <div className="mb-4 flex justify-center space-x-6">
