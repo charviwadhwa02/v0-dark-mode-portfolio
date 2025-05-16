@@ -69,7 +69,7 @@ export default function Home() {
             <ProjectCard
               title="Inspiro"
               description="A Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab."
-              image="/Screenshot 2025-01-18 035341.jpg?height=200&width=400"
+              image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
               slug="notiger"
               tags={["Chrome Extension", "JavaScript", "Motivation"]}
             />
@@ -77,7 +77,7 @@ export default function Home() {
             <ProjectCard
               title="HackXplore"
               description="A unified platform to discover and discuss global hackathons and internships, helping students find opportunities."
-              image="/Screenshot 2025-05-16 213324.jpg?height=200&width=400"
+              image="/Screenshot 2025-05-16 213324.png?height=200&width=400"
               slug="paypeer"
               tags={["React", "Node.js", "MongoDB"]}
             />
