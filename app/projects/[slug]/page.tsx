@@ -17,9 +17,9 @@ const getProject = (slug: string) => {
         "Non-stop Inspiration: You'll never open a new tab without feeling motivated and focused.",
       ],
       technologies: ["Javascript", "Chrome Extensions API", "Notifications API"],
-      image: "/placeholder.svg?height=400&width=800",
+      image: "https://private-user-images.githubusercontent.com/154724710/444212843-e8e92a09-549e-4675-a56b-8da30c50805c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDc0MTE2MDAsIm5iZiI6MTc0NzQxMTMwMCwicGF0aCI6Ii8xNTQ3MjQ3MTAvNDQ0MjEyODQzLWU4ZTkyYTA5LTU0OWUtNDY3NS1hNTZiLThkYTMwYzUwODA1Yy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNlQxNjAxNDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NWU2YjcwYzgzNjE3ZDE5ZDFlMGFlNDIwNjhiODAyYjczNGZiODJlNjNjYjJkZGY3YmRhZTgwN2FiNjAxNWVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.F9LOB678Z0lEqGsTJ6lYbJMzVoE1MJ_Q1bkrIn-w1qs?height=400&width=800",
       githubUrl: "https://github.com/Inspiro",
-      date: "2023",
+      date: "2025",
     },
     paypeer: {
       title: "HackXplore",
@@ -34,10 +34,10 @@ const getProject = (slug: string) => {
         "Personalized recommendations based on your skills and interests",
       ],
       technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-      image: "/placeholder.svg?height=400&width=800",
+      image: "?height=400&width=800",
       demoUrl: "https://hackxplore.example.com",
       githubUrl: "https://github.com/example/hackxplore",
-      date: "2022",
+      date: "2025",
     },
     secli: {
       title: "YouTube Bookmarker",
@@ -55,62 +55,31 @@ const getProject = (slug: string) => {
       image: "/placeholder.svg?height=400&width=800",
       demoUrl: null,
       githubUrl: "https://github.com/example/youtube-bookmarker",
-      date: "2022",
+      date: "2024",
     },
     devtracker: {
-      title: "DevTracker",
-      description: "Track your development progress and set coding goals with this productivity tool.",
+      title: "TrackSafe",
+      description: "TrackSafe is a community-powered accident reporting and safety alert system designed to enhance road safety",
       longDescription:
-        "DevTracker is a productivity tool designed specifically for developers to track their coding habits, set goals, and visualize their progress over time. It integrates with popular coding platforms and IDEs to provide comprehensive insights into your development activities.",
+        "TrackSafe is a community-powered accident reporting and safety alert system designed to enhance road safety, reduce emergency response time, and crowdsource accident data for public awareness and prevention efforts. It empowers users to report, view, and get notified about accidents in their vicinity.",
       features: [
-        "Track coding time across different projects and languages",
-        "Set daily, weekly, or monthly coding goals",
-        "Visualize productivity with detailed charts and statistics",
-        "Integration with GitHub, GitLab, and popular IDEs",
-        "Receive personalized productivity insights and suggestions",
+       "Emergency Contacts Directory",
+
+"One-Tap Emergency Calling",
+
+"Auto-Send Location to Emergency Contacts",
+
+"Saved Personal Emergency Contacts",
+
+"Nearby Hospitals & Police Stations Map"
       ],
-      technologies: ["React", "Firebase", "Chart.js", "GitHub API"],
+      technologies: ["React", "Express", "Nodejs"],
       image: "/placeholder.svg?height=400&width=800",
-      demoUrl: "https://devtracker.example.com",
-      githubUrl: "https://github.com/example/devtracker",
-      date: "2022",
+      demoUrl: "https://women-safety-gamma.vercel.app/,
+      githubUrl: "https://github.com/charrviwadhwa/Women-safety",
+      date: "2024",
     },
-    codesnap: {
-      title: "CodeSnap",
-      description: "Beautiful code snippet generator with syntax highlighting for sharing on social media.",
-      longDescription:
-        "CodeSnap is a tool that allows developers to create beautiful, customizable images of their code snippets for sharing on social media, in presentations, or in documentation. It supports a wide range of programming languages with accurate syntax highlighting and various visual themes.",
-      features: [
-        "Support for over 50 programming languages with syntax highlighting",
-        "Customizable themes, backgrounds, and window styles",
-        "Adjustable padding, font size, and line numbers",
-        "Export as PNG, JPG, or SVG",
-        "One-click sharing to Twitter, LinkedIn, and other platforms",
-      ],
-      technologies: ["TypeScript", "Canvas API", "Prism.js", "React"],
-      image: "/placeholder.svg?height=400&width=800",
-      demoUrl: "https://codesnap.example.com",
-      githubUrl: "https://github.com/example/codesnap",
-      date: "2021",
-    },
-    webperf: {
-      title: "WebPerf",
-      description: "Website performance monitoring and optimization tool to help improve your site's speed.",
-      longDescription:
-        "WebPerf is a comprehensive tool for monitoring and optimizing website performance. It provides detailed insights into loading times, resource usage, and potential bottlenecks, along with actionable recommendations to improve your site's speed and user experience.",
-      features: [
-        "Real-time performance monitoring across different devices and locations",
-        "Detailed waterfall charts of page load process",
-        "Automated suggestions for performance improvements",
-        "Comparison with competitor websites",
-        "Integration with CI/CD pipelines for performance regression testing",
-      ],
-      technologies: ["Lighthouse", "Web Vitals API", "Node.js", "PostgreSQL"],
-      image: "/placeholder.svg?height=400&width=800",
-      demoUrl: "https://webperf.example.com",
-      githubUrl: "https://github.com/example/webperf",
-      date: "2021",
-    },
+
   }
 
   return projects[slug as keyof typeof projects] || null
