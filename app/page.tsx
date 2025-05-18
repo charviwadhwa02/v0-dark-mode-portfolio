@@ -3,8 +3,21 @@ import Link from "next/link"
 import { Github, Twitter, Mail, ArrowRight, Linkedin } from "lucide-react"
 import { BlogCard } from "@/components/blog-card"
 import { ProjectCard } from "@/components/project-card"
+import { SkillCard } from "@/components/skill-card"
 
 export default function Home() {
+  // Featured skills for home page
+  const featuredSkills = [
+    { name: "HTML", icon: "/skills/html.png" },
+    { name: "CSS", icon: "/skills/css.png" },
+    { name: "JavaScript", icon: "/skills/javascript.png" },
+    { name: "React", icon: "/skills/react.png" },
+    { name: "Node.js", icon: "/skills/nodejs.png" },
+    { name: "MongoDB", icon: "/skills/mongodb.png" },
+    { name: "Git", icon: "/skills/git.png" },
+    { name: "Figma", icon: "/skills/figma.svg" },
+  ]
+
   return (
     <div className="min-h-screen bg-transparent text-white">
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-transparent to-cyan-500 opacity-30 blur-2xl"></div>
@@ -99,6 +112,28 @@ export default function Home() {
               className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
             >
               View All Projects <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+
+        {/* Skills Section */}
+        <section className="mb-20">
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-3xl font-bold">Skills & Tech Stack</h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {featuredSkills.map((skill) => (
+              <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/skills"
+              className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
+            >
+              View All Skills <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
         </section>

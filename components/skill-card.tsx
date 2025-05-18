@@ -1,34 +1,30 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react"
+import Image from "next/image"
 
 interface SkillCardProps {
-  title: string
-  skills: string[]
+  name: string
+  icon: string
 }
 
-export function SkillCard({ title, skills }: SkillCardProps) {
+export function SkillCard({ name, icon }: SkillCardProps) {
+  const [isHovered, setIsHovered] = useState(false)
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
+    <div
+      className="flex flex-col items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900/30 p-4 text-center transition-all duration-300 hover:-translate-y-2 hover:border-zinc-700 hover:shadow-lg"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <Card className="h-full overflow-hidden border-0 bg-gradient-to-br from-gray-900 to-purple-950/70 shadow-lg transition-all duration-300 hover:shadow-purple-500/20">
-        <CardContent className="p-6">
-          <h3 className="mb-4 text-xl font-bold text-white">{title}</h3>
-          <ul className="space-y-2">
-            {skills.map((skill) => (
-              <li key={skill} className="flex items-center">
-                <div className="mr-2 h-2 w-2 rounded-full bg-purple-500" />
-                <span className="text-gray-300">{skill}</span>
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
-    </motion.div>
+      <div
+        className={`relative mb-3 flex h-16 w-16 items-center justify-center transition-transform duration-300 ${
+          isHovered ? "scale-110" : ""
+        }`}
+      >
+        <Image src={icon || "/placeholder.svg"} alt={name} width={64} height={64} className="object-contain" />
+      </div>
+      <span className="text-sm font-medium text-white">{name}</span>
+    </div>
   )
 }

@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Home, BookOpen, Briefcase, Award, BookMarked, Menu, X, Github, Twitter } from "lucide-react"
+import { Home, BookOpen, Briefcase, Award, Code, Menu, X, Github, Twitter } from "lucide-react"
 
 export function FloatingNavbar() {
   const [visible, setVisible] = useState(true)
@@ -70,8 +70,8 @@ export function FloatingNavbar() {
           <NavLink href="/achievements" isActive={isActive("/achievements")}>
             Achievements
           </NavLink>
-          <NavLink href="/guestbook" isActive={isActive("/guestbook")}>
-            Guestbook
+          <NavLink href="/skills" isActive={isActive("/skills")}>
+            Skills
           </NavLink>
         </nav>
       </div>
@@ -79,7 +79,7 @@ export function FloatingNavbar() {
       {/* Mobile Menu Button (Bottom Right Corner) */}
       <button
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg md:hidden"
+        className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black shadow-lg md:hidden"
         aria-label="Toggle menu"
       >
         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -103,7 +103,7 @@ export function FloatingNavbar() {
         <MobileNavIconLink href="/blog" icon={<BookOpen size={20} />} isActive={isActive("/blog")} />
         <MobileNavIconLink href="/projects" icon={<Briefcase size={20} />} isActive={isActive("/projects")} />
         <MobileNavIconLink href="/achievements" icon={<Award size={20} />} isActive={isActive("/achievements")} />
-        <MobileNavIconLink href="/guestbook" icon={<BookMarked size={20} />} isActive={isActive("/guestbook")} />
+        <MobileNavIconLink href="/skills" icon={<Code size={20} />} isActive={isActive("/skills")} />
         <MobileNavIconLink
           href="https://github.com/charrviwadhwa"
           icon={<Github size={20} />}
@@ -146,7 +146,7 @@ function MobileNavIconLink({
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
       className={`flex h-12 w-12 items-center justify-center rounded-full transition-colors ${
-        isActive ? "bg-blue-600 text-white" : "bg-blue-600/90 text-white hover:bg-blue-500"
+        isActive ? "bg-white text-black" : "bg-white/90 text-black hover:bg-white"
       }`}
     >
       {icon}
