@@ -70,9 +70,7 @@ export default function Home() {
               title="Inspiro"
               description="A Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab."
               image="/placeholder.svg?height=200&width=400"
-              slug="inspiro"
               tags={["Chrome Extension", "JavaScript", "Motivation"]}
-              longDescription="Inspiro is a Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab. With Inspiro, your new tab page will no longer be boring or empty—it'll be filled with inspiring quotes and beautiful images to keep you focused and motivated."
               githubUrl="https://github.com/example/inspiro"
               demoUrl="https://chrome.google.com/webstore/detail/inspiro"
             />
@@ -81,9 +79,7 @@ export default function Home() {
               title="HackXplore"
               description="A unified platform to discover and discuss global hackathons and internships, helping students find opportunities."
               image="/placeholder.svg?height=200&width=400"
-              slug="hackxplore"
               tags={["React", "Node.js", "MongoDB"]}
-              longDescription="HackXplore is a comprehensive platform designed to help students discover hackathons, internships, and find teammates for their projects. It aggregates opportunities from various sources and provides a community space for discussion and collaboration."
               githubUrl="https://github.com/example/hackxplore"
               demoUrl="https://hackxplore.example.com"
             />
@@ -92,9 +88,7 @@ export default function Home() {
               title="YouTube Bookmarker"
               description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
               image="/placeholder.svg?height=200&width=400"
-              slug="youtube-bookmarker"
               tags={["JavaScript", "Chrome API", "YouTube"]}
-              longDescription="YouTube Bookmarker is a browser extension that enhances your YouTube viewing experience by allowing you to bookmark specific timestamps in videos. This makes it easy to return to important parts of tutorials, lectures, or any long-form content without having to search through the entire video."
               githubUrl="https://github.com/example/youtube-bookmarker"
             />
           </div>

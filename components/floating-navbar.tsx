@@ -53,31 +53,26 @@ export function FloatingNavbar() {
     <>
       {/* Desktop Navbar */}
       <div
-        className={`fixed left-0 top-1/2 z-50 -translate-y-1/2 transition-transform duration-300 md:flex ${
-          visible ? "translate-x-0" : "-translate-x-16"
+        className={`fixed left-0 right-0 top-6 z-50 hidden justify-center transition-transform duration-300 md:flex ${
+          visible ? "translate-y-0" : "-translate-y-24"
         }`}
       >
-        <nav className="flex flex-col items-center space-y-4 rounded-r-lg border border-zinc-800 bg-zinc-900/80 p-3 backdrop-blur-md transition-all duration-300">
-          <NavIconLink href="/" icon={<Home size={20} />} isActive={isActive("/")} tooltip="Home" />
-          <NavIconLink href="/blog" icon={<BookOpen size={20} />} isActive={isActive("/blog")} tooltip="Blog" />
-          <NavIconLink
-            href="/projects"
-            icon={<Briefcase size={20} />}
-            isActive={isActive("/projects")}
-            tooltip="Projects"
-          />
-          <NavIconLink
-            href="/achievements"
-            icon={<Award size={20} />}
-            isActive={isActive("/achievements")}
-            tooltip="Achievements"
-          />
-          <NavIconLink
-            href="/guestbook"
-            icon={<BookMarked size={20} />}
-            isActive={isActive("/guestbook")}
-            tooltip="Guestbook"
-          />
+        <nav className="flex items-center space-x-1 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-2 backdrop-blur-md transition-all duration-300">
+          <NavLink href="/" isActive={isActive("/")}>
+            Home
+          </NavLink>
+          <NavLink href="/blog" isActive={isActive("/blog")}>
+            Blog
+          </NavLink>
+          <NavLink href="/projects" isActive={isActive("/projects")}>
+            Projects
+          </NavLink>
+          <NavLink href="/achievements" isActive={isActive("/achievements")}>
+            Achievements
+          </NavLink>
+          <NavLink href="/guestbook" isActive={isActive("/guestbook")}>
+            Guestbook
+          </NavLink>
         </nav>
       </div>
 
@@ -121,31 +116,16 @@ export function FloatingNavbar() {
   )
 }
 
-function NavIconLink({
-  href,
-  icon,
-  isActive,
-  tooltip,
-}: {
-  href: string
-  icon: React.ReactNode
-  isActive: boolean
-  tooltip: string
-}) {
+function NavLink({ href, children, isActive }: { href: string; children: React.ReactNode; isActive: boolean }) {
   return (
-    <div className="group relative">
-      <Link
-        href={href}
-        className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
-          isActive ? "bg-blue-600 text-white" : "bg-zinc-800 text-gray-400 hover:bg-zinc-700 hover:text-white"
-        }`}
-      >
-        {icon}
-      </Link>
-      <div className="absolute left-full ml-2 hidden rounded bg-zinc-800 px-2 py-1 text-xs text-white group-hover:block">
-        {tooltip}
-      </div>
-    </div>
+    <Link
+      href={href}
+      className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+        isActive ? "bg-zinc-800 text-white" : "text-gray-400 hover:text-white"
+      }`}
+    >
+      {children}
+    </Link>
   )
 }
 
