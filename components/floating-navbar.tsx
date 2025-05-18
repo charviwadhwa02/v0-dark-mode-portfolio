@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
+import { Home, BookOpen, Briefcase, Award, BookMarked, Menu, X, Github, Twitter } from "lucide-react"
 
 export function FloatingNavbar() {
   const [visible, setVisible] = useState(true)
@@ -53,40 +53,42 @@ export function FloatingNavbar() {
     <>
       {/* Desktop Navbar */}
       <div
-        className={`fixed left-0 right-0 top-6 z-50 flex justify-center transition-transform duration-300 ${
-          visible ? "translate-y-0" : "-translate-y-24"
+        className={`fixed left-0 top-1/2 z-50 -translate-y-1/2 transition-transform duration-300 md:flex ${
+          visible ? "translate-x-0" : "-translate-x-16"
         }`}
       >
-        <nav className="flex items-center space-x-1 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-2 backdrop-blur-md transition-all duration-300">
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="mr-2 rounded-full p-1 text-gray-400 hover:bg-zinc-800 hover:text-white md:hidden"
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-
-          {/* Desktop Navigation Links */}
-          <div className="hidden md:flex md:items-center md:space-x-1">
-            <NavLink href="/" isActive={isActive("/")}>
-              Home
-            </NavLink>
-            <NavLink href="/blog" isActive={isActive("/blog")}>
-              Blog
-            </NavLink>
-            <NavLink href="/projects" isActive={isActive("/projects")}>
-              Projects
-            </NavLink>
-            <NavLink href="/achievements" isActive={isActive("/achievements")}>
-              Achievements
-            </NavLink>
-            <NavLink href="/guestbook" isActive={isActive("/guestbook")}>
-              Guestbook
-            </NavLink>
-          </div>
+        <nav className="flex flex-col items-center space-y-4 rounded-r-lg border border-zinc-800 bg-zinc-900/80 p-3 backdrop-blur-md transition-all duration-300">
+          <NavIconLink href="/" icon={<Home size={20} />} isActive={isActive("/")} tooltip="Home" />
+          <NavIconLink href="/blog" icon={<BookOpen size={20} />} isActive={isActive("/blog")} tooltip="Blog" />
+          <NavIconLink
+            href="/projects"
+            icon={<Briefcase size={20} />}
+            isActive={isActive("/projects")}
+            tooltip="Projects"
+          />
+          <NavIconLink
+            href="/achievements"
+            icon={<Award size={20} />}
+            isActive={isActive("/achievements")}
+            tooltip="Achievements"
+          />
+          <NavIconLink
+            href="/guestbook"
+            icon={<BookMarked size={20} />}
+            isActive={isActive("/guestbook")}
+            tooltip="Guestbook"
+          />
         </nav>
       </div>
+
+      {/* Mobile Menu Button (Bottom Right Corner) */}
+      <button
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-white shadow-lg md:hidden"
+        aria-label="Toggle menu"
+      >
+        {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button>
 
       {/* Mobile Menu Overlay */}
       <div
@@ -98,54 +100,76 @@ export function FloatingNavbar() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed bottom-0 left-0 right-0 z-40 transform bg-zinc-900 p-4 shadow-lg transition-transform duration-300 ease-in-out md:hidden ${
-          mobileMenuOpen ? "translate-y-0" : "translate-y-full"
+        className={`fixed bottom-20 right-6 z-40 flex flex-col space-y-3 transition-transform duration-300 ease-in-out md:hidden ${
+          mobileMenuOpen ? "translate-y-0" : "translate-y-full opacity-0"
         }`}
       >
-        <div className="flex flex-col space-y-2">
-          <MobileNavLink href="/" isActive={isActive("/")}>
-            Home
-          </MobileNavLink>
-          <MobileNavLink href="/blog" isActive={isActive("/blog")}>
-            Blog
-          </MobileNavLink>
-          <MobileNavLink href="/projects" isActive={isActive("/projects")}>
-            Projects
-          </MobileNavLink>
-          <MobileNavLink href="/achievements" isActive={isActive("/achievements")}>
-            Achievements
-          </MobileNavLink>
-          <MobileNavLink href="/guestbook" isActive={isActive("/guestbook")}>
-            Guestbook
-          </MobileNavLink>
-        </div>
+        <MobileNavIconLink href="/" icon={<Home size={20} />} isActive={isActive("/")} />
+        <MobileNavIconLink href="/blog" icon={<BookOpen size={20} />} isActive={isActive("/blog")} />
+        <MobileNavIconLink href="/projects" icon={<Briefcase size={20} />} isActive={isActive("/projects")} />
+        <MobileNavIconLink href="/achievements" icon={<Award size={20} />} isActive={isActive("/achievements")} />
+        <MobileNavIconLink href="/guestbook" icon={<BookMarked size={20} />} isActive={isActive("/guestbook")} />
+        <MobileNavIconLink
+          href="https://github.com/charrviwadhwa"
+          icon={<Github size={20} />}
+          isActive={false}
+          external
+        />
+        <MobileNavIconLink href="https://x.com/charvi_wadhwa" icon={<Twitter size={20} />} isActive={false} external />
       </div>
     </>
   )
 }
 
-function NavLink({ href, children, isActive }: { href: string; children: React.ReactNode; isActive: boolean }) {
+function NavIconLink({
+  href,
+  icon,
+  isActive,
+  tooltip,
+}: {
+  href: string
+  icon: React.ReactNode
+  isActive: boolean
+  tooltip: string
+}) {
   return (
-    <Link
-      href={href}
-      className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-        isActive ? "bg-zinc-800 text-white" : "text-gray-400 hover:text-white"
-      }`}
-    >
-      {children}
-    </Link>
+    <div className="group relative">
+      <Link
+        href={href}
+        className={`flex h-10 w-10 items-center justify-center rounded-full transition-colors ${
+          isActive ? "bg-blue-600 text-white" : "bg-zinc-800 text-gray-400 hover:bg-zinc-700 hover:text-white"
+        }`}
+      >
+        {icon}
+      </Link>
+      <div className="absolute left-full ml-2 hidden rounded bg-zinc-800 px-2 py-1 text-xs text-white group-hover:block">
+        {tooltip}
+      </div>
+    </div>
   )
 }
 
-function MobileNavLink({ href, children, isActive }: { href: string; children: React.ReactNode; isActive: boolean }) {
+function MobileNavIconLink({
+  href,
+  icon,
+  isActive,
+  external = false,
+}: {
+  href: string
+  icon: React.ReactNode
+  isActive: boolean
+  external?: boolean
+}) {
   return (
     <Link
       href={href}
-      className={`block rounded-lg px-4 py-3 text-center text-base font-medium transition-colors ${
-        isActive ? "bg-zinc-800 text-white" : "text-gray-400 hover:bg-zinc-800 hover:text-white"
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className={`flex h-12 w-12 items-center justify-center rounded-full transition-colors ${
+        isActive ? "bg-blue-600 text-white" : "bg-blue-600/90 text-white hover:bg-blue-500"
       }`}
     >
-      {children}
+      {icon}
     </Link>
   )
 }
