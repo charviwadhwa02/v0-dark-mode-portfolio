@@ -57,6 +57,7 @@ const config = {
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
         badscript: ['"Bad Script"', 'cursive'],
+         newsreader: ['"Newsreader"', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
