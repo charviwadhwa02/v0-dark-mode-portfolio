@@ -56,6 +56,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         serif: ["var(--font-serif)"],
+        badscript: ['"Bad Script"', 'cursive'],
       },
       borderRadius: {
         lg: "var(--radius)",
