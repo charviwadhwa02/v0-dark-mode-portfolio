@@ -38,7 +38,7 @@ export default function Home() {
               </span>
               <span className="inline-flex items-center">Passionate about Tech</span>
             </p>
-            <p className="mb-8 text-center text-gray-300 md:text-left font-newsreader">
+            <p className="mb-8 text-center text-gray-300 md:text-left font-newsreader text-lg">
               I'm a web developer working with the MERN stack. I'm passionate about building scalable web applications
               and solving problems through algorithms. Currently, I'm exploring AI and machine learning. I also enjoy
               contributing to open source projects and sharing knowledge with the developer community.
