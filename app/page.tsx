@@ -81,20 +81,20 @@ export default function Home() {
             <h2 className="text-3xl font-bold">Skills & Tech Stack</h2>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {featuredSkills.map((skill) => (
               <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
             ))}
           </div>
 
-          <div className="mt-8 text-center">
+{/*           <div className="mt-8 text-center">
             <Link
               href="/skills"
               className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
             >
               View All Skills <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
-          </div>
+          </div> */}
         </section>
 
         {/* Projects Section */}
