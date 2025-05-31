@@ -17,8 +17,9 @@ export default function Home() {
     { name: "Express", icon: "https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=00000042" },
     { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" },
     { name: "Git", icon: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000" },
-    { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000" },
+    { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" },
   ]
+  
 
   return (
     <div className="min-h-screen bg-transparent text-white">
