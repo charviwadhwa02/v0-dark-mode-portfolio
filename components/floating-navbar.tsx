@@ -61,9 +61,9 @@ export function FloatingNavbar() {
           <NavLink href="/" isActive={isActive("/")}>
             Home
           </NavLink>
-           <NavLink href="/skills" isActive={isActive("/skills")}>
+{/*            <NavLink href="/skills" isActive={isActive("/skills")}>
             Skills
-          </NavLink>
+          </NavLink> */}
           <NavLink href="/blog" isActive={isActive("/blog")}>
             Blog
           </NavLink>
