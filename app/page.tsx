@@ -8,14 +8,14 @@ import { SkillCard } from "@/components/skill-card"
 export default function Home() {
   // Featured skills for home page
   const featuredSkills = [
-    { name: "HTML", icon: "/skills/html.png" },
-    { name: "CSS", icon: "/skills/css.png" },
-    { name: "JavaScript", icon: "/skills/javascript.png" },
-    { name: "React", icon: "/skills/react.png" },
-    { name: "Node.js", icon: "/skills/nodejs.png" },
-    { name: "MongoDB", icon: "/skills/mongodb.png" },
-    { name: "Git", icon: "/skills/git.png" },
-    { name: "Figma", icon: "/skills/figma.svg" },
+    { name: "HTML", icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" },
+    { name: "CSS", icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000" },
+    { name: "JavaScript", icon: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000" },
+    { name: "React", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" },
+    { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000" },
+    { name: "MongoDB", icon: "https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000" },
+    { name: "Express", icon: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" },
+    { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" },
   ]
 
   return (
