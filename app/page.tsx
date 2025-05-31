@@ -74,6 +74,29 @@ export default function Home() {
           </div>
         </div>
 
+
+         {/* Skills Section */}
+        <section className="mb-20">
+          <div className="mb-8 flex items-center justify-between">
+            <h2 className="text-3xl font-bold">Skills & Tech Stack</h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {featuredSkills.map((skill) => (
+              <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/skills"
+              className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
+            >
+              View All Skills <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section className="mb-20">
           <h2 className="mb-8 text-3xl font-bold">Projects</h2>
@@ -112,28 +135,6 @@ export default function Home() {
               className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
             >
               View All Projects <ArrowRight className="ml-1 h-4 w-4" />
-            </Link>
-          </div>
-        </section>
-
-        {/* Skills Section */}
-        <section className="mb-20">
-          <div className="mb-8 flex items-center justify-between">
-            <h2 className="text-3xl font-bold">Skills & Tech Stack</h2>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-            {featuredSkills.map((skill) => (
-              <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link
-              href="/skills"
-              className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
-            >
-              View All Skills <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div>
         </section>
