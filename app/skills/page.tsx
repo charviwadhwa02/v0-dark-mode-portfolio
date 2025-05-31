@@ -4,33 +4,34 @@ import { SkillCard } from "@/components/skill-card"
 
 export default function SkillsPage() {
   // Frontend skills
-  const frontendSkills = [
+  const Skills = [
     { name: "HTML", icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" },
-    { name: "CSS", icon: "/skills/css.png" },
-    { name: "JavaScript", icon: "/skills/javascript.png" },
-    { name: "React", icon: "/skills/react.png" },
-    { name: "Tailwind", icon: "/skills/tailwind.png" },
-    { name: "Next.js", icon: "/skills/nextjs.png" },
-  ]
+    { name: "CSS", icon: "https://img.icons8.com/?size=100&id=21278&format=png&color=000000" },
+    { name: "JavaScript", icon: "https://img.icons8.com/?size=100&id=108784&format=png&color=000000" },
+    { name: "React", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" },
+    // { name: "Tailwind", icon: "/skills/tailwind.png" },
+    // { name: "Next.js", icon: "/skills/nextjs.png" },
+  
 
   // Backend skills
-  const backendSkills = [
-    { name: "Node.js", icon: "/skills/nodejs.png" },
-    { name: "Express", icon: "/skills/express.png" },
-    { name: "MongoDB", icon: "/skills/mongodb.png" },
-    { name: "SQL", icon: "/skills/sql.png" },
-    { name: "Python", icon: "/skills/python.png" },
-    { name: "Firebase", icon: "/skills/firebase.svg" },
-  ]
+  // const backendSkills = [
+    { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000" },
+    { name: "Express", icon: "https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000" },
+    { name: "MongoDB", icon: "https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000" },
+    { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" },
+    // { name: "SQL", icon: "/skills/sql.png" },
+    // { name: "Python", icon: "/skills/python.png" },
+    // { name: "Firebase", icon: "/skills/firebase.svg" },
+  
 
   // Tools and others
-  const toolsSkills = [
-    { name: "Git", icon: "/skills/git.png" },
-    { name: "GitHub", icon: "/skills/github.png" },
-    { name: "VS Code", icon: "/skills/vscode.png" },
-    { name: "Figma", icon: "/skills/figma.svg" },
-    { name: "Docker", icon: "/skills/docker.svg" },
-    { name: "AWS", icon: "/skills/aws.svg" },
+  // const toolsSkills = [
+    { name: "Git", icon: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000" },
+    { name: "GitHub", icon: "https://img.icons8.com/?size=100&id=62856&format=png&color=000000" },
+    // { name: "VS Code", icon: "/skills/vscode.png" },
+    // { name: "Figma", icon: "/skills/figma.svg" },
+    // { name: "Docker", icon: "/skills/docker.svg" },
+    // { name: "AWS", icon: "/skills/aws.svg" },
   ]
 
   return (
@@ -47,15 +48,15 @@ export default function SkillsPage() {
 
         <div className="mb-12 space-y-10">
           <div>
-            <h2 className="mb-4 text-xl font-semibold text-blue-400">Frontend Development</h2>
+{/*             <h2 className="mb-4 text-xl font-semibold text-blue-400">Frontend Development</h2> */}
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-              {frontendSkills.map((skill) => (
+              {Skills.map((skill) => (
                 <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
               ))}
             </div>
           </div>
 
-          <div>
+{/*           <div>
             <h2 className="mb-4 text-xl font-semibold text-blue-400">Backend Development</h2>
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
               {backendSkills.map((skill) => (
@@ -71,7 +72,7 @@ export default function SkillsPage() {
                 <SkillCard key={skill.name} name={skill.name} icon={skill.icon} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Footer */}
