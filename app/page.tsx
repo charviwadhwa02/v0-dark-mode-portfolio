@@ -26,7 +26,7 @@ export default function Home() {
         <div className="mb-20 mt-24 flex flex-col items-center justify-between md:flex-row md:items-start">
           <div className="max-w-2xl">
             <h1 className="mb-4 text-center text-4xl font-bold md:text-left md:text-5xl">Charvi Wadhwa</h1>
-            <p className="mb-4 text-center text-gray-400 md:text-left">
+            <p className="mb-4 text-center text-gray-400 md:text-left font-newsreader">
               <span className="inline-flex items-center">
                 Open Source Contributor <span className="mx-2 text-gray-600">•</span>
               </span>
