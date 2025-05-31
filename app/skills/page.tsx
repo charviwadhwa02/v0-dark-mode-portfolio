@@ -5,7 +5,7 @@ import { SkillCard } from "@/components/skill-card"
 export default function SkillsPage() {
   // Frontend skills
   const frontendSkills = [
-    { name: "HTML", icon: "/skills/html.png" },
+    { name: "HTML", icon: "https://img.icons8.com/?size=100&id=20909&format=png&color=000000" },
     { name: "CSS", icon: "/skills/css.png" },
     { name: "JavaScript", icon: "/skills/javascript.png" },
     { name: "React", icon: "/skills/react.png" },
