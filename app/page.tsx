@@ -66,7 +66,7 @@ export default function Home() {
           <div className="mb-12 md:mb-0">
             <div className="overflow-hidden rounded-full border-2 border-gray-800">
               <Image
-                src="/placeholder.svg?height=150&width=150"
+                src="/WhatsApp Image 2025-03-31 at 19.07.31_db7e897b.jpg?height=150&width=150"
                 alt="Profile"
                 width={150}
                 height={150}
