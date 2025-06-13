@@ -44,7 +44,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="Hubble"
             description="Hubble is a centralized web platform designed to manage, organize, and promote college events efficiently for students and administrators."
-            image="https://lh3.googleusercontent.com/aida/ANhTlcnhYNJDnOJ_7LY-aR1vya8PMFT6HNpwJPEvvmyYY-ctf52Bp-jlV7sV77wzKJ1XiMKD4kVUAsiYYPh8lPQMsEXyCvUe50uTIiDdD0CGg0f8xfT2VF5ZBiyfS2CbfAwG2pF_xkMXw__TEiX--_fBKJmUHpXPooxU0_Vzqcp1p4UMQYojEnmcARYRu50I5zOdx8EYQ8rJYAyOvtmQg26lNsBVqsLXiXmCdIVj-6oLwzCRwteqXlGYGTeXzGE=s1600?height=200&width=400"
+            image="/Screenshot 2025-06-13 205528.png?height=200&width=400"
             tags={["React", "Firebase", "MongoDB", "Express", "Nodejs"]}
             githubUrl="https://github.com/charrviwadhwa/hubble"
           />
