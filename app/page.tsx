@@ -159,14 +159,14 @@ export default function Home() {
           />
           </div>
 
-          <div className="mt-8 text-center">
+{/*           <div className="mt-8 text-center">
             <Link
               href="/blog"
               className="inline-flex items-center text-sm font-medium text-gray-400 transition-colors hover:text-white"
             >
               View All Blog Posts <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
-          </div>
+          </div> */}
         </section>
 
         {/* Contact Section */}
