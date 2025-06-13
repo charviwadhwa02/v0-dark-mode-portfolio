@@ -8,9 +8,8 @@ import { FloatingNavbar } from "@/components/floating-navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "John Doe | Developer Portfolio",
-  description: "Fullstack Web Developer, Web3 Enthusiast, Blogger, and Tech Enthusiast",
-    generator: 'v0.dev'
+  title: "Charvi Wadhwa",
+ 
 }
 
 export default function RootLayout({
