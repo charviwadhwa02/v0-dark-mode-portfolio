@@ -27,8 +27,6 @@ export default function BlogPage() {
           />
         </div>
 
-        <section className="mb-20"></section>
-
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
           <div className="mb-4 flex justify-center space-x-6">
