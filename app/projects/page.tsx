@@ -19,7 +19,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
-            image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
+            image="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-91c4-61f7-9d8e-3e5f5ca2a106/raw?se=2025-06-13T16%3A36%3A29Z&sp=r&sv=2024-08-04&sr=b&scid=c22d9d61-54d7-51e8-bef9-5ee07df27570&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-12T23%3A55%3A54Z&ske=2025-06-13T23%3A55%3A54Z&sks=b&skv=2024-08-04&sig=C7D1hIIMwHlYTtw%2BucJ/Jmvs5/4pMa3D9gTsK2UfiqQ%3D?height=200&width=400"
             tags={["Chrome Extension", "JavaScript"]}
             githubUrl="https://github.com/charrviwadhwa/Inspiro"
           />
