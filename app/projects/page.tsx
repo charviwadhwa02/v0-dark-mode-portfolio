@@ -50,7 +50,7 @@ export default function ProjectsPage() {
 {/*             demoUrl="https://devtracker.example.com" */}
           />
 
-    
+    </div>
 
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
