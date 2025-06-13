@@ -19,7 +19,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
-            image="/placeholder.svg?height=200&width=400"
+            image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
             tags={["Chrome Extension", "JavaScript"]}
             githubUrl="https://github.com/example/inspiro"
             demoUrl="https://chrome.google.com/webstore/detail/inspiro"
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
           <ProjectCard
             title="HackXplore"
             description="A unified platform to discover and discuss global hackathons and internships."
-            image="/placeholder.svg?height=200&width=400"
+            image="/?height=200&width=400"
             tags={["React", "Node.js", "MongoDB"]}
             githubUrl="https://github.com/example/hackxplore"
             demoUrl="https://hackxplore.example.com"
@@ -37,13 +37,13 @@ export default function ProjectsPage() {
           <ProjectCard
             title="YouTube Bookmarker"
             description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
-            image="/placeholder.svg?height=200&width=400"
+            image="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.max-500x3000.format-webp.webp?height=200&width=400"
             tags={["JavaScript", "Chrome API", "YouTube"]}
             githubUrl="https://github.com/example/youtube-bookmarker"
           />
 
           <ProjectCard
-            title="DevTracker"
+            title="Fiverr Scam Extension"
             description="Track your development progress and set coding goals with this productivity tool for developers."
             image="/placeholder.svg?height=200&width=400"
             tags={["React", "Firebase", "Charts"]}
