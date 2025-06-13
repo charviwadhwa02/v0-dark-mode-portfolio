@@ -21,17 +21,17 @@ export default function ProjectsPage() {
             description="A Chrome extension that brings daily boost of motivation right to your browser."
             image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
             tags={["Chrome Extension", "JavaScript"]}
-            githubUrl="https://github.com/example/inspiro"
-            demoUrl="https://chrome.google.com/webstore/detail/inspiro"
+            githubUrl="https://github.com/charrviwadhwa/Inspiro"
+{/*             demoUrl="https://chrome.google.com/webstore/detail/inspiro" */}
           />
 
           <ProjectCard
             title="HackXplore"
             description="A unified platform to discover and discuss global hackathons and internships."
-            image="/?height=200&width=400"
-            tags={["React", "Node.js", "MongoDB"]}
-            githubUrl="https://github.com/example/hackxplore"
-            demoUrl="https://hackxplore.example.com"
+            image="/Screenshot 2025-06-13 200856.png?height=200&width=400"
+            tags={["React", "Node.js", "MongoDB","Express"]}
+            githubUrl="https://github.com/charrviwadhwa/HackXplore"
+{/*             demoUrl="https://hackxplore.vercel.app/" */}
           />
 
           <ProjectCard
@@ -39,36 +39,19 @@ export default function ProjectsPage() {
             description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
             image="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.max-500x3000.format-webp.webp?height=200&width=400"
             tags={["JavaScript", "Chrome API", "YouTube"]}
-            githubUrl="https://github.com/example/youtube-bookmarker"
+            githubUrl="https://github.com/charrviwadhwa/My-YT-Bookmarks"
           />
 
           <ProjectCard
-            title="Fiverr Scam Extension"
-            description="Track your development progress and set coding goals with this productivity tool for developers."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["React", "Firebase", "Charts"]}
-            githubUrl="https://github.com/example/devtracker"
-            demoUrl="https://devtracker.example.com"
+            title="Hubble"
+            description="Hubble is a centralized web platform designed to manage, organize, and promote college events efficiently for students and administrators."
+            image="https://lh3.googleusercontent.com/aida/ANhTlcnhYNJDnOJ_7LY-aR1vya8PMFT6HNpwJPEvvmyYY-ctf52Bp-jlV7sV77wzKJ1XiMKD4kVUAsiYYPh8lPQMsEXyCvUe50uTIiDdD0CGg0f8xfT2VF5ZBiyfS2CbfAwG2pF_xkMXw__TEiX--_fBKJmUHpXPooxU0_Vzqcp1p4UMQYojEnmcARYRu50I5zOdx8EYQ8rJYAyOvtmQg26lNsBVqsLXiXmCdIVj-6oLwzCRwteqXlGYGTeXzGE=s1600?height=200&width=400"
+            tags={["React", "Firebase", "MongoDB", "Express", "Nodejs"]}
+            githubUrl="https://github.com/charrviwadhwa/hubble"
+{/*             demoUrl="https://devtracker.example.com" */}
           />
 
-          <ProjectCard
-            title="CodeSnap"
-            description="Beautiful code snippet generator with syntax highlighting for sharing on social media."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["TypeScript", "Canvas API", "Syntax Highlighting"]}
-            githubUrl="https://github.com/example/codesnap"
-            demoUrl="https://codesnap.example.com"
-          />
-
-          <ProjectCard
-            title="WebPerf"
-            description="Website performance monitoring and optimization tool to help improve your site's speed."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["Performance", "Lighthouse", "Analytics"]}
-            githubUrl="https://github.com/example/webperf"
-            demoUrl="https://webperf.example.com"
-          />
-        </div>
+    
 
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
