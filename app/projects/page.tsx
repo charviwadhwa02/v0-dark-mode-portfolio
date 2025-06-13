@@ -47,11 +47,10 @@ export default function ProjectsPage() {
             image="https://lh3.googleusercontent.com/aida/ANhTlcnhYNJDnOJ_7LY-aR1vya8PMFT6HNpwJPEvvmyYY-ctf52Bp-jlV7sV77wzKJ1XiMKD4kVUAsiYYPh8lPQMsEXyCvUe50uTIiDdD0CGg0f8xfT2VF5ZBiyfS2CbfAwG2pF_xkMXw__TEiX--_fBKJmUHpXPooxU0_Vzqcp1p4UMQYojEnmcARYRu50I5zOdx8EYQ8rJYAyOvtmQg26lNsBVqsLXiXmCdIVj-6oLwzCRwteqXlGYGTeXzGE=s1600?height=200&width=400"
             tags={["React", "Firebase", "MongoDB", "Express", "Nodejs"]}
             githubUrl="https://github.com/charrviwadhwa/hubble"
-{/*             demoUrl="https://devtracker.example.com" */}
           />
 
     </div>
-  </div>
+
 
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
