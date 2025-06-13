@@ -154,7 +154,6 @@ export default function Home() {
             description=" Diving into GSSoC Extended and Hacktoberfest 2024"
             image="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*w9OGCqQLPC99X-W3.png?height=200&width=400"
             tags={["OpenSource", "Hackoctoberfest", "GSSOC"]}
-            slug="my-first-open-source-journey"
             liveUrl="https://medium.com/@charviwadhwa06/my-first-open-source-journey-diving-into-gssoc-extended-and-hacktoberfest-2024-7c854b87283c"
           />
           </div>
