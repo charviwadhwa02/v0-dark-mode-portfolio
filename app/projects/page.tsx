@@ -22,7 +22,6 @@ export default function ProjectsPage() {
             image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
             tags={["Chrome Extension", "JavaScript"]}
             githubUrl="https://github.com/charrviwadhwa/Inspiro"
-{/*             demoUrl="https://chrome.google.com/webstore/detail/inspiro" */}
           />
 
           <ProjectCard
@@ -31,7 +30,7 @@ export default function ProjectsPage() {
             image="/Screenshot 2025-06-13 200856.png?height=200&width=400"
             tags={["React", "Node.js", "MongoDB","Express"]}
             githubUrl="https://github.com/charrviwadhwa/HackXplore"
-{/*             demoUrl="https://hackxplore.vercel.app/" */}
+            demoUrl="https://hackxplore.vercel.app/"
           />
 
           <ProjectCard
