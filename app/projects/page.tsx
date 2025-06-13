@@ -18,16 +18,16 @@ export default function ProjectsPage() {
         <div className="mb-12 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
             title="Inspiro"
-            description="A Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab."
+            description="A Chrome extension that brings daily boost of motivation right to your browser."
             image="/placeholder.svg?height=200&width=400"
-            tags={["Chrome Extension", "JavaScript", "Motivation"]}
+            tags={["Chrome Extension", "JavaScript"]}
             githubUrl="https://github.com/example/inspiro"
             demoUrl="https://chrome.google.com/webstore/detail/inspiro"
           />
 
           <ProjectCard
             title="HackXplore"
-            description="A unified platform to discover and discuss global hackathons and internships, helping students find opportunities."
+            description="A unified platform to discover and discuss global hackathons and internships."
             image="/placeholder.svg?height=200&width=400"
             tags={["React", "Node.js", "MongoDB"]}
             githubUrl="https://github.com/example/hackxplore"
