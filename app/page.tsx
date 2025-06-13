@@ -108,7 +108,7 @@ export default function Home() {
             <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
-            image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
+            image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
             tags={["Chrome Extension", "JavaScript"]}
             githubUrl="https://github.com/charrviwadhwa/Inspiro"
           />
@@ -173,69 +173,11 @@ export default function Home() {
           <h2 className="mb-8 text-3xl font-bold">Contact</h2>
           <p className="mb-6 text-lg text-gray-300">
             You can send me over an e-mail on{" "}
-            <Link href="mailto:contact@example.com" className="text-blue-400 hover:underline">
-              contact@example.com
+            <Link href="mailto:charviwadhwa06@gmail.com" className="text-blue-400 hover:underline">
+              charviwadhwa06@gmail.com
             </Link>
           </p>
-
-          <div className="rounded-lg border border-zinc-800 bg-zinc-900/30 p-6 backdrop-blur-sm">
-            <h3 className="mb-4 text-xl font-medium">Get In Touch</h3>
-            <form className="space-y-4">
-              <div className="grid gap-4 md:grid-cols-2">
-                <div>
-                  <label htmlFor="name" className="mb-2 block text-sm text-gray-400">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2 text-white focus:border-zinc-700 focus:outline-none"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="mb-2 block text-sm text-gray-400">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2 text-white focus:border-zinc-700 focus:outline-none"
-                    placeholder="Your email"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="subject" className="mb-2 block text-sm text-gray-400">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2 text-white focus:border-zinc-700 focus:outline-none"
-                  placeholder="Subject"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="mb-2 block text-sm text-gray-400">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 py-2 text-white focus:border-zinc-700 focus:outline-none"
-                  placeholder="Your message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="rounded-md bg-zinc-800 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-700"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </section>
+         </section>
 
         {/* Footer */}
         <footer className="border-t border-zinc-800 py-8 text-center text-sm text-gray-400">
