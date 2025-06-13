@@ -22,7 +22,7 @@ export default function BlogPage() {
             description=" Diving into GSSoC Extended and Hacktoberfest 2024"
             image="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*w9OGCqQLPC99X-W3.png?height=200&width=400"
             tags={["OpenSource", "Hackoctoberfest", "GSSOC"]}
-            slug="building-a-real-time-notification-system"
+            githubUrl="https://github.com/charrviwadhwa/Inspiro"
           />
 
           
