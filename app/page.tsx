@@ -106,30 +106,29 @@ export default function Home() {
 
           <div className="mb-6 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
-              title="Inspiro"
-              description="A Chrome extension that brings a daily boost of motivation right to your browser every time you open a new tab."
-              image="/placeholder.svg?height=200&width=400"
-              tags={["Chrome Extension", "JavaScript", "Motivation"]}
-              githubUrl="https://github.com/example/inspiro"
-              demoUrl="https://chrome.google.com/webstore/detail/inspiro"
-            />
+            title="Inspiro"
+            description="A Chrome extension that brings daily boost of motivation right to your browser."
+            image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbtrpay.com%2Fhow-to-inspire-your-team%2F&psig=AOvVaw1djW0b2huzbTLMovYjstHe&ust=1749912223152000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDB3JjR7o0DFQAAAAAdAAAAABAE?height=200&width=400"
+            tags={["Chrome Extension", "JavaScript"]}
+            githubUrl="https://github.com/charrviwadhwa/Inspiro"
+          />
 
-            <ProjectCard
-              title="HackXplore"
-              description="A unified platform to discover and discuss global hackathons and internships, helping students find opportunities."
-              image="/placeholder.svg?height=200&width=400"
-              tags={["React", "Node.js", "MongoDB"]}
-              githubUrl="https://github.com/example/hackxplore"
-              demoUrl="https://hackxplore.example.com"
-            />
+          <ProjectCard
+            title="HackXplore"
+            description="A unified platform to discover and discuss global hackathons and internships."
+            image="/Screenshot 2025-06-13 200856.png?height=200&width=400"
+            tags={["React", "Node.js", "MongoDB", "Express"]}
+            githubUrl="https://github.com/charrviwadhwa/HackXplore"
+            demoUrl="https://hackxplore.vercel.app/"
+          />
 
-            <ProjectCard
-              title="YouTube Bookmarker"
-              description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
-              image="/placeholder.svg?height=200&width=400"
-              tags={["JavaScript", "Chrome API", "YouTube"]}
-              githubUrl="https://github.com/example/youtube-bookmarker"
-            />
+          <ProjectCard
+            title="YouTube Bookmarker"
+            description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
+            image="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.max-500x3000.format-webp.webp?height=200&width=400"
+            tags={["JavaScript", "Chrome API", "YouTube"]}
+            githubUrl="https://github.com/charrviwadhwa/My-YT-Bookmarks"
+          />
           </div>
 
           <div className="text-center">
