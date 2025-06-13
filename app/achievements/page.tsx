@@ -18,24 +18,24 @@ export default function AchievementsPage() {
         <div className="space-y-6">
           <AchievementCard
             icon={<Trophy className="h-6 w-6 text-yellow-500" />}
-            title="Hackathon Winner"
-            date="2023"
-            description="First place at the National Coding Challenge for the project 'Notiger'"
+            title="Finalist in AM Hacks"
+            date="2025"
+            description="Selected as a top 15 finalist at the AM Hacks, IGDTUW for creating a centralized platform that helps students discover top hackathons and internships from various platforms and connect with peers"
+          />
+          <AchievementCard
+            icon={<Trophy className="h-6 w-6 text-yellow-500" />}
+            title="Finalist in Hackemon"
+            date="2025"
+            description="Selected among the top 20 teams out of 1500+ registrations for demonstrating exceptional innovation and problem-solving skills."
           />
 
           <AchievementCard
             icon={<Award className="h-6 w-6 text-blue-500" />}
             title="Open Source Contributor"
-            date="2022-Present"
-            description="Active contributor to several popular open source projects with over 50 merged PRs"
+            date="2024-Present"
+            description="Enhanced 3 open-source projects during Hacktoberfest by submitting 8 pull requests, resolving 3 critical bugs, and refining features to improve user experience for over 500 active contributors."
           />
 
-          <AchievementCard
-            icon={<Medal className="h-6 w-6 text-green-500" />}
-            title="Tech Blog Recognition"
-            date="2022"
-            description="Featured in 'Top 10 Tech Blogs to Follow' by Dev Community"
-          />
         </div>
          <section className="mb-20">
           
