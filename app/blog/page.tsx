@@ -17,58 +17,15 @@ export default function BlogPage() {
 
         <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <BlogCard
-            title="Building a Real-time Notification System"
-            date="May 10, 2023"
-            description="Learn how to build a scalable real-time notification system using WebSockets and Redis."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["WebSockets", "Redis", "Node.js"]}
+            title="My First Open Source Journey"
+            date="May 18, 2025"
+            description=" Diving into GSSoC Extended and Hacktoberfest 2024"
+            image="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*w9OGCqQLPC99X-W3.png?height=200&width=400"
+            tags={["OpenSource", "Hackoctoberfest", "GSSOC"]}
             slug="building-a-real-time-notification-system"
           />
 
-          <BlogCard
-            title="Introduction to Web3 Development"
-            date="April 22, 2023"
-            description="A beginner's guide to getting started with Web3 development using Ethereum and Solidity."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["Web3", "Ethereum", "Solidity"]}
-            slug="introduction-to-web3-development"
-          />
-
-          <BlogCard
-            title="Creating a CLI Tool with Rust"
-            date="March 15, 2023"
-            description="Step-by-step guide to building your first command-line interface tool using Rust."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["Rust", "CLI", "Programming"]}
-            slug="creating-a-cli-tool-with-rust"
-          />
-
-          <BlogCard
-            title="Optimizing React Applications"
-            date="February 28, 2023"
-            description="Learn advanced techniques to optimize your React applications for better performance."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["React", "Performance", "JavaScript"]}
-            slug="optimizing-react-applications"
-          />
-
-          <BlogCard
-            title="Getting Started with TypeScript"
-            date="January 15, 2023"
-            description="A comprehensive guide to TypeScript for JavaScript developers."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["TypeScript", "JavaScript", "Web Development"]}
-            slug="getting-started-with-typescript"
-          />
-
-          <BlogCard
-            title="Building Accessible Web Applications"
-            date="December 10, 2022"
-            description="Best practices for creating web applications that are accessible to everyone."
-            image="/placeholder.svg?height=200&width=400"
-            tags={["Accessibility", "HTML", "CSS", "JavaScript"]}
-            slug="building-accessible-web-applications"
-          />
+          
         </div>
 
         <section className="mb-20"></section>
