@@ -9,10 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Charvi Wadhwa",
-icons: {
-            icon: '/favicon.ico', // Path to your favicon
-          },
- 
+
 }
 
 export default function RootLayout({
@@ -22,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${inter.className} bg-black text-white antialiased`}>
         <GradientBackground />
         <FloatingNavbar />
