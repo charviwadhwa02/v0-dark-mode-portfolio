@@ -17,6 +17,14 @@ export default function ProjectsPage() {
 
         <div className="mb-12 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
+            title="Gitpeek"
+            description="Understand any GitHub repo in seconds"
+            image="/gitpeek.png?height=200&width=400"
+            tags={["Gemini API", "GitHub API","React","Nodejs"]}
+            githubUrl="https://github.com/charrviwadhwa/Gitpeek"
+            demoUrl="https://gitpeek1.vercel.app/"
+          />
+          <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
             image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
