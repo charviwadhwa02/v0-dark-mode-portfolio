@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Charvi Wadhwa",
+icons: {
+            icon: '/favicon.ico', // Path to your favicon
+          },
  
 }
 
