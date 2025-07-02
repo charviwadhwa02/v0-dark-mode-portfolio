@@ -17,7 +17,7 @@ export default function ProjectsPage() {
 
         <div className="mb-12 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <ProjectCard
-            title="Gitpeek"
+            title="GitPeek"
             description="Understand any GitHub repo in seconds"
             image="/gitpeek.png?height=200&width=400"
             tags={["Gemini API", "GitHub API","React","Nodejs"]}
