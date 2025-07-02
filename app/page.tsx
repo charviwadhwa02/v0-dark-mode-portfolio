@@ -106,6 +106,14 @@ export default function Home() {
 
           <div className="mb-6 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <ProjectCard
+            title="GitPeek"
+            description="Understand any GitHub repo in seconds"
+            image="/gitpeek.png?height=200&width=400"
+            tags={["Gemini API", "GitHub API","React","Nodejs"]}
+            githubUrl="https://github.com/charrviwadhwa/Gitpeek"
+            demoUrl="https://gitpeek1.vercel.app/"
+          />
+            <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
             image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
@@ -122,13 +130,6 @@ export default function Home() {
             demoUrl="https://hackxplore.vercel.app/"
           />
 
-          <ProjectCard
-            title="YouTube Bookmarker"
-            description="A browser extension that lets you bookmark specific timestamps in YouTube videos for quick reference."
-            image="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.max-500x3000.format-webp.webp?height=200&width=400"
-            tags={["JavaScript", "Chrome API", "YouTube"]}
-            githubUrl="https://github.com/charrviwadhwa/My-YT-Bookmarks"
-          />
           </div>
 
           <div className="text-center">
