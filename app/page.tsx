@@ -28,8 +28,8 @@ export default function Home() {
         {/* Main Content */}
         <div className="mb-20 mt-24 flex flex-col items-center justify-between md:flex-row md:items-start">
           <div className="max-w-2xl">
-            <h1 className="mb-4 text-center text-4xl font-bold md:text-left md:text-5xl font-newsreader">Charvi Wadhwa</h1>
-            <p className="mb-4 text-center text-gray-400 md:text-left font-newsreader">
+            <h1 className="mb-4 text-center text-4xl font-bold md:text-left md:text-5xl ">Charvi Wadhwa</h1>
+            <p className="mb-4 text-center text-gray-400 md:text-left ">
               <span className="inline-flex items-center">
                 Open Source Contributor <span className="mx-2 text-gray-600">•</span>
               </span>
@@ -41,7 +41,7 @@ export default function Home() {
               </span>
               <span className="inline-flex items-center">Passionate about Tech</span>
             </p>
-            <p className="mb-8 text-center text-gray-300 md:text-left font-newsreader text-lg">
+            <p className="mb-8 text-center text-gray-300 md:text-left  text-lg">
               I'm a web developer working with the MERN stack. I'm passionate about building scalable web applications
               and solving problems through algorithms. Currently, I'm exploring AI and machine learning. I also enjoy
               contributing to open source projects and sharing knowledge with the developer community.
