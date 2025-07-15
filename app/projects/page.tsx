@@ -25,6 +25,14 @@ export default function ProjectsPage() {
             demoUrl="https://gitpeek1.vercel.app/"
           />
           <ProjectCard
+            title="SolveStack"
+            description="Find your next DSA problem on your terms"
+            image="/solvestack.png?height=200&width=400"
+            tags={["Gemini API", "Tailwind CSS","React","Nodejs"]}
+            githubUrl="https://github.com/charrviwadhwa/SolveStack"
+            demoUrl="https://solvestack.vercel.app/"
+          />
+          <ProjectCard
             title="Inspiro"
             description="A Chrome extension that brings daily boost of motivation right to your browser."
             image="/Screenshot 2025-01-18 035341.png?height=200&width=400"
