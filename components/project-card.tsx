@@ -18,58 +18,70 @@ export function ProjectCard({ title, description, image, tags, githubUrl, demoUr
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <div className="group h-full" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-      <div className="h-full overflow-hidden rounded-lg border border-zinc-800 bg-zinc-900/30 transition-all hover:-translate-y-1 hover:bg-zinc-900/70 hover:shadow-lg backdrop-blur-sm">
-        <div className="relative h-48 overflow-hidden">
-          <Image
-            src={image || "/placeholder.svg?height=200&width=400"}
-            alt={title}
-            fill
-            className="object-cover transition-transform group-hover:scale-105"
-          />
+    <div
+      className="group relative h-full cursor-pointer transform rounded-2xl border border-white/10 bg-zinc-900/50 shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Image section */}
+      <div className="relative h-52 w-full overflow-hidden rounded-t-2xl">
+        <Image
+          src={image || "/placeholder.svg?height=200&width=400"}
+          alt={title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
 
-          {/* Project links overlay */}
-          <div
-            className={`absolute inset-0 flex items-center justify-center gap-4 bg-black/60 transition-opacity duration-300 ${
-              isHovered ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {githubUrl && (
-              <Link
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800 text-white transition-transform hover:scale-110 hover:bg-zinc-700"
-                aria-label="View source code on GitHub"
-              >
-                <Github size={20} />
-              </Link>
-            )}
-            {demoUrl && (
-              <Link
-                href={demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800 text-white transition-transform hover:scale-110 hover:bg-zinc-700"
-                aria-label="View live demo"
-              >
-                <ExternalLink size={20} />
-              </Link>
-            )}
-          </div>
+        {/* Overlay icons */}
+        <div
+          className={`absolute inset-0 z-10 flex items-center justify-center gap-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+            isHovered ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          {githubUrl && (
+            <Link
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800 text-white transition hover:scale-110 hover:bg-zinc-700"
+              aria-label="GitHub"
+            >
+              <Github size={20} />
+            </Link>
+          )}
+          {demoUrl && (
+            <Link
+              href={demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-800 text-white transition hover:scale-110 hover:bg-zinc-700"
+              aria-label="Live Demo"
+            >
+              <ExternalLink size={20} />
+            </Link>
+          )}
         </div>
-        <div className="p-4">
-          <div className="mb-2 flex items-center justify-between">
-            <h3 className="text-lg font-medium text-white">{title}</h3>
-          </div>
-          <p className="mb-3 text-sm text-gray-400 line-clamp-2">{description}</p>
-          <div className="mb-2 flex flex-wrap gap-2">
-            {tags.map((tag) => (
-              <span key={tag} className="rounded-full bg-zinc-800 px-2 py-0.5 text-xs text-gray-300">
-                {tag}
-              </span>
-            ))}
-          </div>
+      </div>
+
+      {/* Content */}
+      <div className="flex flex-col justify-between p-5">
+        <div>
+          <h3 className="mb-1 text-xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-200">
+            {title}
+          </h3>
+          <p className="text-sm text-gray-400 line-clamp-3">{description}</p>
+        </div>
+
+        {/* Tags */}
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-zinc-800/60 px-3 py-1 text-xs text-gray-300 transition-all hover:bg-blue-500/60 hover:text-white"
+            >
+              #{tag}
+            </span>
+          ))}
         </div>
       </div>
     </div>
