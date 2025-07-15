@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Github, Twitter, Mail, ArrowRight, Linkedin } from "lucide-react"
 import { BlogCard } from "@/components/blog-card"
 import { ProjectCard } from "@/components/project-card"
+import { ExperienceCard } from "@/components/experience-card"
 import { SkillCard } from "@/components/skill-card"
 
 export default function Home() {
