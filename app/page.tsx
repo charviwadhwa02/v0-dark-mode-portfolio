@@ -114,7 +114,7 @@ export default function Home() {
             demoUrl="https://gitpeek1.vercel.app/"
           />
             <ProjectCard
-            title="SolveStaxk"
+            title="SolveStack"
             description="Find your next DSA problem on your terms"
             image="/solvestack.png?height=200&width=400"
             tags={["Gemini API", "Tailwind CSS","React","Nodejs"]}
