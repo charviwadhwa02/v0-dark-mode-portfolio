@@ -98,6 +98,36 @@ export default function Home() {
               View All Skills <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
           </div> */}
+const experiences = [
+    {
+      title: "Intern",
+      company: "Shiv Nadar Foundation",
+      duration: "Jun 2025 - Present",
+      description:
+        "Built a budget management system frontend using React and Tailwind CSS for tracking financial provisioning and consumption across 4 quarters and 3+ departments.",
+    },
+  ]
+        </section>
+
+ <section className="mb-20">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-2">Experience</h2>
+            <p className="text-gray-400">My professional journey and work experience</p>
+          </div>
+
+          <div className="max-w-4xl">
+            {experiences.map((experience, index) => (
+              <ExperienceCard
+                key={index}
+                title={experience.title}
+                company={experience.company}
+                duration={experience.duration}
+                description={experience.description}
+{/*                 technologies={experience.technologies} */}
+                isLast={index === experiences.length - 1}
+              />
+            ))}
+          </div>
         </section>
 
         {/* Projects Section */}
