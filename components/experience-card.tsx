@@ -29,7 +29,7 @@ export function ExperienceCard({
           setIsVisible(true)
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     )
 
     if (cardRef.current) {
@@ -46,7 +46,7 @@ export function ExperienceCard({
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
     >
-      {/* Timeline line and dot */}
+      {/* Timeline Line & Dot */}
       <div className="flex flex-col items-center mr-6">
         <div
           className={`w-4 h-4 rounded-full border-2 transition-all duration-500 ${
@@ -64,7 +64,7 @@ export function ExperienceCard({
         )}
       </div>
 
-      {/* Content */}
+      {/* Card Content */}
       <div className="flex-1 pb-8">
         <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-lg p-6 hover:border-zinc-700 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
@@ -72,7 +72,7 @@ export function ExperienceCard({
             <span className="text-sm text-gray-400 mt-1 sm:mt-0">{duration}</span>
           </div>
 
-          <p className="text-lg text-cyan-400 mb-3">{company}</p>
+          <p className="text-lg text-cyan-400 font-medium mb-2">{company}</p>
 
           <p className="text-gray-300 mb-4 leading-relaxed">{description}</p>
 
@@ -80,7 +80,7 @@ export function ExperienceCard({
             {technologies.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs font-medium bg-zinc-800 text-gray-300 rounded-full border border-zinc-700 hover:border-zinc-600 transition-colors"
+                className="px-3 py-1 text-xs font-medium bg-zinc-800 text-gray-300 rounded-full border border-zinc-700 hover:border-cyan-500 transition-colors"
               >
                 {tech}
               </span>
