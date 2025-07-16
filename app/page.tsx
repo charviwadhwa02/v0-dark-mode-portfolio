@@ -91,7 +91,7 @@ export default function Home() {
                 company={experience.company}
                 duration={experience.duration}
                 description={experience.description}
-                technologies={experience.technologies}
+{/*                 technologies={experience.technologies} */}
                 isLast={index === experiences.length - 1}
               />
             ))}
