@@ -7,7 +7,7 @@ interface ExperienceCardProps {
   company: string
   duration: string
   description: string
-  technologies: string[]
+  // technologies: string[]
   isLast?: boolean
 }
 
@@ -16,7 +16,7 @@ export function ExperienceCard({
   company,
   duration,
   description,
-  technologies,
+  // technologies,
   isLast = false,
 }: ExperienceCardProps) {
   const [isVisible, setIsVisible] = useState(false)
@@ -76,7 +76,7 @@ export function ExperienceCard({
 
           <p className="text-gray-300 mb-4 leading-relaxed">{description}</p>
 
-          <div className="flex flex-wrap gap-2">
+{/*           <div className="flex flex-wrap gap-2">
             {technologies.map((tech) => (
               <span
                 key={tech}
@@ -85,7 +85,7 @@ export function ExperienceCard({
                 {tech}
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
