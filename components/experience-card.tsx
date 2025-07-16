@@ -66,10 +66,6 @@ export function ExperienceCard({
       {/* Card Content */}
       <div className="flex-1 pb-10">
         <div className="relative group bg-zinc-900/40 backdrop-blur-md border border-zinc-800 rounded-xl p-6 transition-all duration-300 hover:border-zinc-700 hover:shadow-lg hover:shadow-cyan-500/10">
-          {/* Icon */}
-          <div className="absolute -top-6 -left-6 hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 to-cyan-500 p-2 shadow-md">
-            <Briefcase className="h-5 w-5 text-white" />
-          </div>
 
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
