@@ -7,7 +7,6 @@ interface ExperienceCardProps {
   company: string
   duration: string
   description: string
-  // technologies: string[]
   isLast?: boolean
 }
 
@@ -16,7 +15,6 @@ export function ExperienceCard({
   company,
   duration,
   description,
-  // technologies,
   isLast = false,
 }: ExperienceCardProps) {
   const [isVisible, setIsVisible] = useState(false)
@@ -75,17 +73,6 @@ export function ExperienceCard({
           <p className="text-lg text-cyan-400 font-medium mb-2">{company}</p>
 
           <p className="text-gray-300 mb-4 leading-relaxed">{description}</p>
-
-{/*           <div className="flex flex-wrap gap-2">
-            {technologies.map((tech) => (
-              <span
-                key={tech}
-                className="px-3 py-1 text-xs font-medium bg-zinc-800 text-gray-300 rounded-full border border-zinc-700 hover:border-cyan-500 transition-colors"
-              >
-                {tech}
-              </span>
-            ))}
-          </div> */}
         </div>
       </div>
     </div>
