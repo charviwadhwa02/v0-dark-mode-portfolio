@@ -35,7 +35,7 @@ const experiences = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-transparent text-white">
-     
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-pink-500 via-transparent to-cyan-500 opacity-30 blur-2xl"></div>
       <div className="relative z-10 mx-auto max-w-5xl px-4 py-8">
 
         {/* Hero Section */}
