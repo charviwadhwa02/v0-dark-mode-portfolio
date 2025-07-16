@@ -28,7 +28,7 @@ const experiences = [
     duration: "Jun 2025 - Present",
     description:
       "Built a budget management system frontend using React and Tailwind CSS for tracking financial provisioning and consumption across 4 quarters and 3+ departments.",
-    technologies: ["React", "Tailwind CSS", "TypeScript"],
+    
   },
 ]
 
@@ -91,7 +91,6 @@ export default function Home() {
                 company={experience.company}
                 duration={experience.duration}
                 description={experience.description}
-{/*                 technologies={experience.technologies} */}
                 isLast={index === experiences.length - 1}
               />
             ))}
