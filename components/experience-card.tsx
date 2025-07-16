@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import { Briefcase } from "lucide-react" // Optional: use any icon library
 
 interface ExperienceCardProps {
   title: string
@@ -49,30 +50,38 @@ export function ExperienceCard({
         <div
           className={`w-4 h-4 rounded-full border-2 transition-all duration-500 ${
             isVisible
-              ? "bg-gradient-to-r from-pink-500 to-cyan-500 border-transparent shadow-lg"
+              ? "bg-gradient-to-r from-pink-500 to-cyan-500 border-transparent shadow-md"
               : "bg-zinc-800 border-zinc-600"
           }`}
         />
         {!isLast && (
           <div
             className={`w-0.5 h-24 mt-2 transition-all duration-700 delay-300 ${
-              isVisible ? "bg-gradient-to-b from-pink-500/50 to-cyan-500/50" : "bg-zinc-700"
+              isVisible ? "bg-gradient-to-b from-pink-500/40 to-cyan-500/40" : "bg-zinc-700"
             }`}
           />
         )}
       </div>
 
       {/* Card Content */}
-      <div className="flex-1 pb-8">
-        <div className="bg-zinc-900/50 backdrop-blur-sm border border-zinc-800 rounded-lg p-6 hover:border-zinc-700 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+      <div className="flex-1 pb-10">
+        <div className="relative group bg-zinc-900/40 backdrop-blur-md border border-zinc-800 rounded-xl p-6 transition-all duration-300 hover:border-zinc-700 hover:shadow-lg hover:shadow-cyan-500/10">
+          {/* Icon */}
+          <div className="absolute -top-6 -left-6 hidden sm:flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-tr from-pink-500 to-cyan-500 p-2 shadow-md">
+            <Briefcase className="h-5 w-5 text-white" />
+          </div>
+
+          {/* Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
             <h3 className="text-xl font-semibold text-white">{title}</h3>
             <span className="text-sm text-gray-400 mt-1 sm:mt-0">{duration}</span>
           </div>
 
-          <p className="text-lg text-cyan-400 font-medium mb-2">{company}</p>
+          {/* Company */}
+          <p className="text-cyan-400 font-medium mb-2 text-sm sm:text-base">{company}</p>
 
-          <p className="text-gray-300 mb-4 leading-relaxed">{description}</p>
+          {/* Description */}
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{description}</p>
         </div>
       </div>
     </div>
