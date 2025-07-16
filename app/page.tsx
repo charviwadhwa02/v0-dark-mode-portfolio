@@ -30,14 +30,6 @@ const experiences = [
       "Built a budget management system frontend using React and Tailwind CSS for tracking financial provisioning and consumption across 4 quarters and 3+ departments.",
     
   },
-  {
-    title: "Intern",
-    company: "Shiv Nadar Foundation",
-    duration: "Jun 2025 - Present",
-    description:
-      "Built a budget management system frontend using React and Tailwind CSS for tracking financial provisioning and consumption across 4 quarters and 3+ departments.",
-    
-  },
 ]
 
 export default function Home() {
